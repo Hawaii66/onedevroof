@@ -1,5 +1,6 @@
 import Base64Card from "./components/actions/base64/card";
 import PrettyJSON from "./components/actions/prettyJSON/card";
+import ShuffleArrayCard from "./components/actions/shuffleArray/card";
 import UUIDCard from "./components/actions/uuid/card";
 
 type RenderDevCard = DevCard & {
@@ -26,5 +27,10 @@ export const DevCards: RenderDevCard[] = [
     title: "JSON",
     description: "Prettify or compress JSON",
     component: PrettyJSON,
+  },
+  {
+    title: "Shuffle Array",
+    description: "Shuffle an array of items",
+    component: ShuffleArrayCard,
   },
 ];
