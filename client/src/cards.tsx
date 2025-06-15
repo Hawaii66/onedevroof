@@ -1,5 +1,6 @@
 import Base64Card from "./components/actions/base64/card";
 import PrettyJSON from "./components/actions/prettyJSON/card";
+import ReverseCard from "./components/actions/reverse/card";
 import ShuffleArrayCard from "./components/actions/shuffleArray/card";
 import UUIDCard from "./components/actions/uuid/card";
 
@@ -32,5 +33,10 @@ export const DevCards: RenderDevCard[] = [
     title: "Shuffle Array",
     description: "Shuffle an array of items",
     component: ShuffleArrayCard,
+  },
+  {
+    title: "Reverse",
+    description: "Reverse a string of text",
+    component: ReverseCard,
   },
 ];
