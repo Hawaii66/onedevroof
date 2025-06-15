@@ -1,54 +1,39 @@
-# React + TypeScript + Vite
+# One Dev Roof 🏠🛠️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **One Dev Roof** – your single destination for handy developer tools!
 
-Currently, two official plugins are available:
+This project aims to provide a centralized place for quick, fundamental utilities that simplify daily development tasks. No frills, just functional solutions for common problems.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How to Use
 
-## Expanding the ESLint configuration
+Each tool is designed to be intuitive:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1.  Select the tool you wish to use from the menu/list.
+2.  Input your data into the input field.
+3.  The result will instantly appear in the output field.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## Getting Started (For Developers)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+If you'd like to run this project locally or contribute:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/Hawaii66/onedevroof.git
+    cd onedevroof
+    ```
+2.  **Install dependencies:**
+    - ```bash
+      cd client && pnpm install
+      ```
+3.  **Start the application:**
+    - ```bash
+      cd client && pnpm run dev
+      ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Contributing
+
+Do you have an idea for a simple and useful tool that would fit here? Or did you find a bug? We welcome contributions! Please feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License.
