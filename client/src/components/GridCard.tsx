@@ -18,16 +18,14 @@ export default function GridCard({
   children,
 }: PropsWithChildren<Props>) {
   return (
-    <Card className="bg-neutral-700 border-neutral-600">
+    <Card className="bg-neutral-700 border-neutral-600 w-[30rem]">
       <CardHeader>
         <CardTitle className="text-neutral-100">{title}</CardTitle>
         <CardDescription className="text-neutral-300">
           {description}
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-row justify-between items-center gap-4">
-        {children}
-      </CardContent>
+      <CardContent>{children}</CardContent>
     </Card>
   );
 }

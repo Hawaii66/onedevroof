@@ -55,7 +55,6 @@ export default function ShuffleArrayCard({ description, title }: DevCard) {
             <RefreshCw />
           </Button>
         </div>
-
         <p className="max-w-80 text-red-500">{error}</p>
       </div>
     </GridCard>

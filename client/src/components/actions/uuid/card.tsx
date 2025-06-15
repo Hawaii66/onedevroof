@@ -16,17 +16,19 @@ export default function UUIDCard({ description, title }: DevCard) {
 
   return (
     <GridCard description={description} title={title}>
-      <Input
-        onFocus={(e) => {
-          e.target.select();
-        }}
-        value={uuid}
-        className="border-neutral-600 w-80 font-mono text-center"
-      />
-      <CopyButton text={uuid} />
-      <Button onClick={newUUID}>
-        <RefreshCw />
-      </Button>
+      <div className="flex flex-row justify-between items-center gap-2">
+        <Input
+          onFocus={(e) => {
+            e.target.select();
+          }}
+          value={uuid}
+          className="border-neutral-600 w-80 font-mono text-center"
+        />
+        <CopyButton text={uuid} />
+        <Button onClick={newUUID}>
+          <RefreshCw />
+        </Button>
+      </div>
     </GridCard>
   );
 }

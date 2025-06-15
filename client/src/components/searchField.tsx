@@ -16,7 +16,7 @@ export default function SearchField({ setText, text }: Props) {
         placeholder="search"
         autoFocus
       />
-      <Search />
+      <Search color="#404040" />
     </div>
   );
 }

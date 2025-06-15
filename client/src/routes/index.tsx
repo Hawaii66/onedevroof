@@ -4,6 +4,7 @@ import { Separator } from "@/components/ui/separator";
 import { DevCards } from "@/cards";
 import SearchField from "@/components/searchField";
 import { useMemo, useState } from "react";
+import clsx from "clsx";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -41,7 +42,13 @@ function Index() {
         <SearchField setText={setQuery} text={query} />
       </header>
       <Separator className="bg-orange-500" />
-      <div className="flex flex-wrap justify-start items-start gap-4 py-8 w-full grow">
+      <div
+        className={clsx(
+          filtered.length === 1
+            ? "flex justify-center items-center grow"
+            : "flex flex-row flex-wrap gap-4 py-4"
+        )}
+      >
         {filtered.map((card) => {
           const Component = card.component;
 
