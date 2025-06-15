@@ -65,7 +65,7 @@ export default function SecretCard({ description, title }: DevCard) {
             onFocus={(e) => {
               e.target.select();
             }}
-            value={secret}
+            defaultValue={secret}
             className="border-neutral-600 w-80 font-mono text-center"
           />
           <CopyButton text={secret} />
@@ -79,7 +79,7 @@ export default function SecretCard({ description, title }: DevCard) {
             onFocus={(e) => {
               e.target.select();
             }}
-            value={secretSimple}
+            defaultValue={secretSimple}
             className="border-neutral-600 w-80 font-mono text-center"
           />
           <CopyButton text={secretSimple} />
@@ -93,7 +93,7 @@ export default function SecretCard({ description, title }: DevCard) {
             onFocus={(e) => {
               e.target.select();
             }}
-            value={pin}
+            defaultValue={pin}
             className="border-neutral-600 w-80 font-mono text-center"
           />
           <CopyButton text={pin} />

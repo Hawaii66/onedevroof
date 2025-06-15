@@ -53,7 +53,11 @@ function Index() {
           const Component = card.component;
 
           return (
-            <Component description={card.description} title={card.title} />
+            <Component
+              key={card.title}
+              description={card.description}
+              title={card.title}
+            />
           );
         })}
       </div>

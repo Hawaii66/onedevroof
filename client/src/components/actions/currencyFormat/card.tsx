@@ -66,7 +66,7 @@ export default function CurrencyFormatCard({ description, title }: DevCard) {
         <div className="flex flex-row justify-between items-center gap-2">
           <Input
             className="border-neutral-600 w-80 font-mono"
-            value={formatted}
+            defaultValue={formatted}
           />
           <CopyButton text={formatted} />
         </div>

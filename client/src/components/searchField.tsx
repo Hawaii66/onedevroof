@@ -1,5 +1,6 @@
 import { Search } from "lucide-react";
 import { Input } from "./ui/input";
+import { useEffect } from "react";
 
 type Props = {
   text: string;
@@ -7,6 +8,14 @@ type Props = {
 };
 
 export default function SearchField({ setText, text }: Props) {
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get("query");
+    if (query) {
+      setText(query);
+    }
+  }, [setText]);
+
   return (
     <div className="flex flex-row justify-center items-center gap-2">
       <Input

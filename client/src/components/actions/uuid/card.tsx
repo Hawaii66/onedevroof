@@ -21,7 +21,7 @@ export default function UUIDCard({ description, title }: DevCard) {
           onFocus={(e) => {
             e.target.select();
           }}
-          value={uuid}
+          defaultValue={uuid}
           className="border-neutral-600 w-80 font-mono text-center"
         />
         <CopyButton text={uuid} />
