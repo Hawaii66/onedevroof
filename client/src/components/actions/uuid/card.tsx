@@ -1,4 +1,4 @@
-import type { DevCard } from "@/cars";
+import type { DevCard } from "@/cards";
 import CopyButton from "@/components/CopyButton";
 import GridCard from "@/components/GridCard";
 import { Button } from "@/components/ui/button";

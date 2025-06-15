@@ -1,3 +1,4 @@
+import Base64Card from "./components/actions/base64/card";
 import UUIDCard from "./components/actions/uuid/card";
 
 type RenderDevCard = DevCard & {
@@ -14,5 +15,10 @@ export const DevCards: RenderDevCard[] = [
     title: "UUID",
     description: "Generated v4 UUID",
     component: UUIDCard,
+  },
+  {
+    title: "Base64",
+    description: "Encode & decode Base64",
+    component: Base64Card,
   },
 ];

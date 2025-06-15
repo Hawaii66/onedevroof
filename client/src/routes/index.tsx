@@ -1,7 +1,7 @@
 import "../index.css";
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { Separator } from "@/components/ui/separator";
-import { DevCards } from "@/cars";
+import { DevCards } from "@/cards";
 
 export const Route = createFileRoute("/")({
   component: Index,
