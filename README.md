@@ -22,13 +22,13 @@ If you'd like to run this project locally or contribute:
     cd onedevroof
     ```
 2.  **Install dependencies:**
-    - ```bash
+    ```bash
       cd client && pnpm install
-      ```
+    ```
 3.  **Start the application:**
-    - ```bash
+    ```bash
       cd client && pnpm run dev
-      ```
+    ```
 
 ## Contributing
 
