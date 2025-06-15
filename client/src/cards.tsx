@@ -1,4 +1,5 @@
 import Base64Card from "./components/actions/base64/card";
+import PrettyJSON from "./components/actions/prettyJSON/card";
 import UUIDCard from "./components/actions/uuid/card";
 
 type RenderDevCard = DevCard & {
@@ -20,5 +21,10 @@ export const DevCards: RenderDevCard[] = [
     title: "Base64",
     description: "Encode & decode Base64",
     component: Base64Card,
+  },
+  {
+    title: "JSON",
+    description: "Prettify or compress JSON",
+    component: PrettyJSON,
   },
 ];
