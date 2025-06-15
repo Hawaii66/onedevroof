@@ -1,4 +1,5 @@
 import type { DevCard } from "@/cards";
+import CopyButton from "@/components/CopyButton";
 import GridCard from "@/components/GridCard";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
@@ -49,6 +50,7 @@ export default function ShuffleArrayCard({ description, title }: DevCard) {
             className="border-neutral-600 w-80 h-40 font-mono"
             value={text}
           />
+          <CopyButton text={text} />
           <Button onClick={() => onTypeText(text)}>
             <RefreshCw />
           </Button>

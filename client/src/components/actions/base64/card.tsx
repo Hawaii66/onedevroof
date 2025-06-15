@@ -1,4 +1,5 @@
 import type { DevCard } from "@/cards";
+import CopyButton from "@/components/CopyButton";
 import GridCard from "@/components/GridCard";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -28,17 +29,23 @@ export default function Base64Card({ description, title }: DevCard) {
     <GridCard description={description} title={title}>
       <div className="flex flex-col gap-2">
         <Label>Decoded</Label>
-        <Textarea
-          onChange={(e) => onTypeDecoded(e.target.value)}
-          className="border-neutral-600 w-80 h-40 font-mono"
-          value={decoded}
-        />
+        <div className="flex flex-row justify-between items-center gap-2">
+          <Textarea
+            onChange={(e) => onTypeDecoded(e.target.value)}
+            className="border-neutral-600 w-80 h-40 font-mono"
+            value={decoded}
+          />
+          <CopyButton text={decoded} />
+        </div>
         <Label>Encoded</Label>
-        <Textarea
-          onChange={(e) => onTypeEncoded(e.target.value)}
-          className="border-neutral-600 w-80 h-40 font-mono"
-          value={encoded}
-        />
+        <div className="flex flex-row justify-between items-center gap-2">
+          <Textarea
+            onChange={(e) => onTypeEncoded(e.target.value)}
+            className="border-neutral-600 w-80 h-40 font-mono"
+            value={encoded}
+          />
+          <CopyButton text={encoded} />
+        </div>
       </div>
     </GridCard>
   );

@@ -1,4 +1,5 @@
 import Base64Card from "./components/actions/base64/card";
+import CurrencyFormatCard from "./components/actions/currencyFormat/card";
 import PrettyJSON from "./components/actions/prettyJSON/card";
 import ReverseCard from "./components/actions/reverse/card";
 import ShuffleArrayCard from "./components/actions/shuffleArray/card";
@@ -38,5 +39,10 @@ export const DevCards: RenderDevCard[] = [
     title: "Reverse",
     description: "Reverse a string of text",
     component: ReverseCard,
+  },
+  {
+    title: "Currency Formatter",
+    description: "Format any number into a locale dependant string",
+    component: CurrencyFormatCard,
   },
 ];
