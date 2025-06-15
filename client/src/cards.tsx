@@ -2,6 +2,7 @@ import Base64Card from "./components/actions/base64/card";
 import CurrencyFormatCard from "./components/actions/currencyFormat/card";
 import PrettyJSON from "./components/actions/prettyJSON/card";
 import ReverseCard from "./components/actions/reverse/card";
+import SecretCard from "./components/actions/secret/card";
 import ShuffleArrayCard from "./components/actions/shuffleArray/card";
 import UUIDCard from "./components/actions/uuid/card";
 
@@ -19,6 +20,11 @@ export const DevCards: RenderDevCard[] = [
     title: "UUID",
     description: "Generated v4 UUID",
     component: UUIDCard,
+  },
+  {
+    title: "Secret",
+    description: "Generated a random secret",
+    component: SecretCard,
   },
   {
     title: "Base64",
